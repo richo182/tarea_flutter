@@ -182,35 +182,21 @@ class _LoginScreenState extends State<LoginScreen> {
         SizedBox(height: 25.0),
         Center(
           child: Text(
-              '¿Olvidaste tu contraseña?'
+              '¿Olvidaste tu contraseña?',
+            style: TextStyle(
+                color: Colors.grey
+            ),
           ),
         ),
         SizedBox(height: 25.0),
-        Row(
-          children: [
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.only(left: 50.0, right: 20.0),
-                child: Container(
-                  height: 1.0,
-                  color: Colors.grey.shade400,
-                ),
-              ),
+        Center(
+          child: Text(
+            '© 2016-2022 REFACCIONARIAS AGP',
+            style: TextStyle(
+                color: Colors.grey
             ),
-            Text(
-                ' o '
-            ),
-            Expanded(
-              child: Padding(
-                padding: const EdgeInsets.only(right: 50.0, left: 20.0),
-                child: Container(
-                  height: 1.0,
-                  color: Colors.grey.shade400,
-                ),
-              ),
-            ),
-          ],
-        )
+          ),
+        ),
       ],
     );
   }
